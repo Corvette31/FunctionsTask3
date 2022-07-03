@@ -20,8 +20,7 @@ namespace FunctionsTask3
 
             while (int.TryParse(Console.ReadLine(), out number) == false)
             {
-                Console.WriteLine("Ошибка конвертации!");
-                Console.WriteLine("Введите повторно число: ");
+                Console.WriteLine("Ошибка конвертации! Введите повторно число: ");
             }
 
             return number;
