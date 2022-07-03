@@ -13,6 +13,7 @@ namespace FunctionsTask3
             {
                 Console.WriteLine("Введите число");
                 number = ConvertToNumber(ref isConverted);
+
                 if (isConverted == false)
                 {
                     Console.WriteLine("Ошибка конвертации!");
