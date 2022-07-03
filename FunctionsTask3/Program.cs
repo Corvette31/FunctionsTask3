@@ -6,27 +6,23 @@ namespace FunctionsTask3
     {
         static void Main(string[] args)
         {
-            bool isConverted = false;
-            int number = 0;
+            int number;
 
-            while (isConverted == false)
-            {
-                Console.WriteLine("Введите число");
-                number = ConvertToNumber(ref isConverted);
-
-                if (isConverted == false)
-                {
-                    Console.WriteLine("Ошибка конвертации!");
-                }
-            }
+            Console.WriteLine("Введите число: ");
+            number = ConvertToNumber();
 
             Console.WriteLine($"Число {number} успешно было сконвертированно из строки");
         }
 
-        static int ConvertToNumber(ref bool isConverted)
+        static int ConvertToNumber()
         {
             int number;
-            isConverted = int.TryParse(Console.ReadLine(), out number);
+
+            while (int.TryParse(Console.ReadLine(), out number) == false)
+            {
+                Console.WriteLine("Ошибка конвертации!");
+                Console.WriteLine("Введите повторно число: ");
+            }
 
             return number;
         }
