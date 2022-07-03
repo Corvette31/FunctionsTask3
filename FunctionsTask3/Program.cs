@@ -10,7 +10,6 @@ namespace FunctionsTask3
 
             Console.WriteLine("Введите число: ");
             number = ConvertToNumber();
-
             Console.WriteLine($"Число {number} успешно было сконвертированно из строки");
         }
 
