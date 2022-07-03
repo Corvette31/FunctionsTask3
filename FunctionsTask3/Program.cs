@@ -9,11 +9,11 @@ namespace FunctionsTask3
             int number;
 
             Console.WriteLine("Введите число: ");
-            number = ConvertToNumber();
+            number = GetNumber();
             Console.WriteLine($"Число {number} успешно было сконвертированно из строки");
         }
 
-        static int ConvertToNumber()
+        static int GetNumber()
         {
             int number;
 
